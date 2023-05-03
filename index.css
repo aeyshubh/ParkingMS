@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    /* background-image:url("parking-background.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+  
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(1rem); 
+    
+       
+  }
+  
+  .sidebar a {
+    display: block;
+    color: whitesmoke;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color:grey;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+     }
+  
+  .main
+  {
+      padding-top:10px;
+      color:blanchedalmond;
+  }
+  
+  .data
+  {
+        color:blanchedalmond;
+        font-display: block;
+        font-size: x-large;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  

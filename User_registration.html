@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="user_reg.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<body>
+
+
+
+  
+  <form class="modal-content animate" action="User_login_new.html" method="post">
+  
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+	
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required> <br> <br>
+  
+	  <label for="phone"><b>Phone number </b></label>
+      <input type="tel" placeholder="Enter Phone Number" name="pno" required> <br> <br>
+
+	  <label for="email"><b>Email </b></label>
+      <input type="email" placeholder="Enter Email" name="email" required> <br> <br>
+
+	  <label for="add"><b>Address </b></label>
+      <input type="textarea" placeholder="Enter Addres" name="add" required> <br> <br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required> <br><br>
+
+	  <label for="psw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="cpsw" required> <br><br>
+
+  	  <label for="gender"><b>Gender</b></label>
+      <input type="radio" name="gen" value="Male" required> Male 
+      <input type="radio" name="gen" value="Female" required> Female <br><br>
+
+      
+	  <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+	  <div id="login">Already have an account? <a href="User_login_new.html"> Login </a> </style> </div>
+	  <br><br>
+      
+	  <button type="submit" name="register"> <a href="User_login_new.html"> Register  </a> </button> 
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	  
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
