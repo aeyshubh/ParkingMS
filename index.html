@@ -1,85 +1,212 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Beautiful CSS Cards</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-    <head>
-        <title>CSS Cards</title>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">  
-  <script  src="script.js"></script>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="StyleCards.css"/>
-    </head>
+    <!--====== Title ======-->
+    <title>Parking Management System</title>
 
-    <body>
-            
-        <div class="category-name">Book your Parking Slot</div> <br/>
-            
-        <div class="card-category-1">
-            
-            <div class="basic-card basic-card-aqua">
-                <div class="card-content">
-                    <span class="card-title">Two Wheeler</span>
-                    <p class="card-text">
-                        <h2>Empty Slots : </h2>
-                    </p>
-                </div>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/fav1.png" type="image/png">
 
-                <div class="card-link">
-                    <form method="post" action="BookSlot.php">
-                        <input type="hidden" name ="slotNo" value="1" />
-                    <a href="index.php" title="Read Full"><span>Book Now</span></a>
-                </div>
-            </div>
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-            <div class="basic-card basic-card-lips">
-                <div class="card-content">
-                    <span class="card-title">Four Wheeler</span>
-                    <p class="card-text">
-                        <h2><center>Empty Slots :</center></h2>
-                    </p>
-                </div>
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
 
-                <div class="card-link">
-                    <a href="index.php" title="Read Full"><span>Book Now</span></a>
-                </div>
-            </div>
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
-            <div class="basic-card basic-card-light">
-                <div class="card-content">
-                    <span class="card-title">HeavyWeight Veh.</span>
-                    <p class="card-text">
-                        <h2><center>Empty Slots : </center></h2>
-                    </p>
-                </div>
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
 
-                <div class="card-link">
-                    <a href="index.php" title="Read Full"><span>Book Now</span></a>
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-           
         </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== NAVBAR PART START ======-->
+
+    <section class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/fav1.png" alt="Logo">
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">HOME</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
         
-        <br/>
-        
-                <script src="ScriptCards.js"></script>
-    </body>
-</html>
-<!-- partial -->
+        <div id="home" class="slider-area">
+            <div class="bd-example">
+                <div id="carouselOne" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselOne" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselOne" data-slide-to="1"></li>
+                        <li data-target="#carouselOne" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg_cover active" style="background-image: url(assets/images/img1.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title"></h2>
+                                            <ul class="carousel-btn rounded-buttons">
+                                                <li><a class="main-btn rounded-three" href="viewSlots.php">GET STARTED</a></li>
+                                                <!--<li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+
+                        <div class="carousel-item bg_cover" style="background-image: url(assets/images/img2.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title"></h2>
+                                            <ul class="carousel-btn rounded-buttons">
+                                                <li><a class="main-btn rounded-three" href="viewSlots.php">GET STARTED</a></li>
+                                                <!--<li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+
+                        <div class="carousel-item bg_cover" style="background-image: url(assets/images/img3.jpg)">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-xl-6 col-lg-7 col-sm-10">
+                                            <h2 class="carousel-title"></h2>
+                                            <ul class="carousel-btn rounded-buttons">
+                                                <li><a class="main-btn rounded-three" href="viewSlots.php">GET STARTED</a></li>
+                                                <!--<li><a class="main-btn rounded-one" href="#">DOWNLOAD</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div> <!-- row -->
+                                </div> <!-- container -->
+                            </div> <!-- carousel caption -->
+                        </div> <!-- carousel-item -->
+                    </div> <!-- carousel-inner -->
+
+                    <a class="carousel-control-prev" href="#carouselOne" role="button" data-slide="prev">
+                        <i class="lni-arrow-left-circle"></i>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselOne" role="button" data-slide="next">
+                        <i class="lni-arrow-right-circle"></i>
+                    </a>
+                </div> <!-- carousel -->
+            </div> <!-- bd-example -->
+        </div>
+
+    </section>
+
+    <!--====== NAVBAR PART ENDS ======-->
+
+
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<link rel="shortcut icon" href="assets/images/fav1.png" type="image/png">
 
 <style>
 .info,td
@@ -20,7 +21,7 @@
   <m$eta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="bg-img" style="background-image:url('parking-background.jpg'); background-repeat: no-repeat; background-size: cover;">
+<body class="bg-img" style="background-image:url('img2.jpg'); background-repeat: no-repeat; background-size: cover;">
   
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -56,7 +57,7 @@
   <form method="post">
     <div class="content d-flex flex-column align-items-center">
       
-      <div class="main h1 mx-auto" style="color: aliceblue; padding-top: 2rem; padding-bottom: 2rem;"> Welcome <?php  //$name = $_POS$T['uname']; ech$o "$name";  ?> to our website. </div>
+      <div class="main h1 mx-auto" style="color: aliceblue; padding-top: 2rem; padding-bottom: 2rem;"> Please <?php  //$name = $_POS$T['uname']; ech$o "$name";  ?> Book your slot </div>
       
       <div class=" col-12 col-md-8 col-lg-6 justify-content-center d-flex flex-column align-items-center" style="padding-top: 3rem; padding-bottom: 3rem; backdrop-filter: blur(2rem);" id="form1">
         
@@ -87,10 +88,10 @@
           <label class="input-group-text" for="area">Select Area</label>
         </div>
         <select class="custom-select col-4" name="area">
-          <option selected>Area</option>
-          <option value="Alpha mall">Alpha Mall</option>
+          <option>Area</option>
+          <option value="Alpha One mall" selected>Alpha One Mall</option>
           <option value="Himalaya Mall">Himalya Mall</option>
-          <option value="Rajpath Club" selected>Rajpath Club</option>
+          <option value="Rajpath Club">Rajpath Club</option>
           <option value="Karnavati Club">Karnavati</option>
         </select>
       </div>
@@ -241,7 +242,11 @@
     }
     elseif($vtype=="4-wheeler")
     {?>       
-      <div class="row g-0"> <div class="col-5 info text-white"> Total amount </div> <div class="col-auto info text-white">:</div><div class="col-2"></div> <div class="col info text-white"><?php $amt=((15*$nov)*intval($vhr)); echo"$amt Rs."; ?> </div> </div>
+      <div class="row g-0"> <div class="col-5 info text-white"> Total amount </div> <div class="col-auto info text-white">:</div><div class="col-2"></div> <div class="col info text-white"><?php $amt=((15*$nov)*intval($vhr)); echo"$amt Rs.";  if ($amt == 10) {?><style type="text/css">#b2{
+display:none;
+}</style><?php }else{?><style type="text/css">#b1{
+display:none;
+}</style><?php } ?> </div> </div>
     <?php
     }
     else
@@ -250,19 +255,23 @@
     <?php
     }
     ?>
-   
+     
     <div class="row g-0 mt-3">
       <div class="col-6">
         <button class="btn btn-primary">Cancel</button>
       </div>
-      <div class="col-6">
-      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KSVNj16nCdZYDQ" async> </script> </form>
+      </form>
+      <div class="col-6" id="b1">
+      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LtCcAZyVPRR1qc" async> </script> </form>
       </div>
       
+      <div class="col-6" id="b2">
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LtCg38SXCMMYBL" async> </script> </form>
+      </div>
     </div>
     </div>
     <div class="col-2"></div>
-  </form>
+
                 <!--  -->
                 <!-- 
                  <button type="button" class="btn btn-primary" id="payment"> Make Payment</button> -->
