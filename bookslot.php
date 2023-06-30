@@ -32,7 +32,7 @@
         <ul class="navbar-nav gap-3 mb-2 mb-lg-0">
           
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" onclick="repalcehome()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <a class="nav-link active" aria-current="page" href="index.html" onclick="repalcehome()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
               <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
             </svg>Home</a>
           </li>
@@ -46,7 +46,7 @@
             <a class="nav-link active" aria-current="page" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+            <a class="nav-link active" aria-current="page" href="#"  data-bs-toggle="modal" data-bs-target="#contact">Contact Us</a>
           </li>
           
         </ul>
@@ -66,7 +66,7 @@
           <div class="input-group-prepend col-4">
             <label class="input-group-text" for="nplate" >Name</label>
           </div>
-          <input type="te$xt" name="name"  placeholder="Amar" value="Amar" style="border:none; width:33%; outline:none; "></input>
+          <input type="text" name="name"  placeholder="Amar" value="Amar" style="border:none; width:33%; outline:none; "></input>
         </div>
         
         <div class="input-group d-flex justify-content-center mb-3 col-4">
@@ -82,10 +82,9 @@
         </select>
       </div>
       
-      
       <div class="input-group d-flex justify-content-center mb-3 col-4">
         <div class="input-group-prepend col-4">
-          <label class="input-group-text" for="area">Select Area</label>
+          <label class="input-group-text" for="area">Select Area <?php  //$area = $_POST['area']; echo "$area";?> </label>
         </div>
         <select class="custom-select col-4" name="area">
           <option>Area</option>
@@ -282,8 +281,46 @@ display:none;
   }?>
     <!-- //Content of Page 2 ends here-->
 
+  <!-- Contact Us Page -->
+  
+  <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3> Contact Us </h3>
+          <div class="modal-title" id="contactLabel">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+      <div class="container">
+		  <form>
+			<div class="">
+			  <label for="recipient-name" class="col-form-label"> Email </label>
+			  <input type="text" class="form-control" id="recipient-name">
+			</div>
+			<div class="pt-3">
+			  <label for="message-text" class="col-form-label">Message:</label>
+			  <textarea class="form-control" id="message-text"></textarea>
+			</div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-primary w-100">Send message</button>
+        </div>
+        <div class="pt-3">
+        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+			</div>
+		  
+		</div>
+  </form>
+	
+	  </div>
+	</div>
+  </div>
+</div>
 
-    <!-- JavaScript Bundle with Popper -->
+  <!-- Contact Us Page Ends here -->
+    
+  <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
