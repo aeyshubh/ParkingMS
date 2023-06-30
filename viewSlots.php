@@ -48,7 +48,7 @@
         <div class="col-lg-4 col-md-6 pt-4">
             <div class="card text-center text-white border-0 rounded-0" style="background-image: linear-gradient(to bottom right, #FFD3A5 , #FD6585)">
                 <div class="card-body">
-                    <h2 class="card-title" style="height: 9rem;"> <div class="pt-5" id="2w"> 2 - Wheeler </div> </h2>
+                    <h2 class="card-title" style="height: 9rem;"> <div class="pt-5" id="2w" onclick=""> 2 - Wheeler </div> </h2>
                     <p class="card-text"></p>
                     <hr>
                     <a href="bookslot.php" class="btn text-white"> <h5> Book Now </h5> </a>
@@ -58,7 +58,7 @@
         <div class="col-lg-4  col-md-6 pt-4">
             <div class="card text-center text-white border-0 rounded-0" style="background-image: linear-gradient(to bottom right, #3E5151 , #DECBA4);">
                 <div class="card-body">
-                    <h2 class="card-title" style="height: 9rem;"> <div class="pt-5"  id="4w"> 4 - Wheeler </div> </h2>
+                    <h2 class="card-title" style="height: 9rem;"> <div class="pt-5"  id="4w" onclick=""> 4 - Wheeler </div> </h2>
                     <p class="card-text"></p>
                     <hr>
                     <a href="bookslot.php" class="btn text-white"> <h5> Book Now </h5> </a>

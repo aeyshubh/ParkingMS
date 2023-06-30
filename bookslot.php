@@ -14,6 +14,16 @@
 }
 </style>
 
+<script>
+
+/* var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  } */
+  </script>
+
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   
@@ -235,7 +245,11 @@
          <div class="col-5 info text-white"> Total amount </div> 
          <div class="col-auto info text-white">:</div>
          <div class="col-2"></div> 
-         <div class="col info text-white"><?php $amt=((10*$nov)*intval($vhr)); echo"$amt Rs."; ?> </div> 
+         <div class="col info text-white"><?php $amt=((10*$nov)*intval($vhr)); echo"$amt Rs."; if ($amt != 10) {?><style type="text/css">#b2{
+display:none;
+}</style><?php }else{?><style type="text/css">#b1{
+display:none;
+}</style><?php }  ?> </div> 
        </div>
     <?php
     }
@@ -250,7 +264,7 @@ display:none;
     }
     else
     {?>
-      <div class="row g-0"> <div class="col-5 info text-white"> Total amount </div> <div class="col-auto info text-white">:</div><div class="col-2"></div> <div class="col info text-white"><?php $amt=((25*$nov)*intval($vhr)); echo"$amt Rs."; ?> </div> </div>
+      <div class="row g-0"> <div class="col-5 info text-white"> Total amount </div> <div class="col-auto info text-white">:</div><div class="col-2"></div> <div class="col info text-white" id ="zz"><?php $amt=((25*$nov)*intval($vhr)); echo"$amt Rs."; ?> </div> </div>
     <?php
     }
     ?>
